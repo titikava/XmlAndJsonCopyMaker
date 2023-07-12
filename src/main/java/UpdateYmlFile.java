@@ -36,6 +36,20 @@ public class UpdateYmlFile {
                 String newUrl = "http://${URL_HOST()}:3456/castlemock/mock/rest/project/doc9TU/application/vVr2SX/" +
                         "item.html?aid=${QUERY_STRING(query=\"aid\")}&itemid=" + itemId;
                 urlElement.setTextContent(newUrl);
+
+                //Добавляем тег param с атрибутом name="label"
+                NodeList paramNodes = offerElement.getElementsByTagName("param");
+                Element paramElement = doc.createElement("param");
+                paramElement.setAttribute("param", "name");
+                paramElement.setTextContent("CustomLabel1");
+                offerElement.appendChild(paramElement); //Добавляем в конец списка <offer> этот элемент
+
+                //Добавляем тег oldprice с ценой
+                NodeList oldPriceNodes = offerElement.getElementsByTagName("oldprice");
+                Element oldPriceElement = doc.createElement("oldprice");
+                oldPriceElement.setTextContent("10000");
+                offerElement.appendChild(oldPriceElement);
+
             }
 
             // Записываем изменения в исходный файл

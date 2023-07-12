@@ -7,7 +7,7 @@ public class Main {
         YmlToJson yml = new YmlToJson();
         CopyCatalogOffer catalogOffer = new CopyCatalogOffer();
         UpdateYmlFile updateYmlFile = new UpdateYmlFile();
-        catalogOffer.copyCatalog(500, "C:\\Users\\iaros\\OneDrive\\Рабочий стол\\kazan.xml",
+        catalogOffer.copyCatalog(2000, "C:\\Users\\iaros\\OneDrive\\Рабочий стол\\kazan.xml",
                 "C:\\Users\\iaros\\OneDrive\\Рабочий стол\\testXml.xml");
         yml.ymlToJson("C:\\Users\\iaros\\OneDrive\\Рабочий стол\\testXml.xml",
                 "C:\\Users\\iaros\\OneDrive\\Рабочий стол\\testJson.json");
