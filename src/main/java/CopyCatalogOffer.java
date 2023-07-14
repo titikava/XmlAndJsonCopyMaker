@@ -29,7 +29,7 @@ public class CopyCatalogOffer {
 
 // Создаем корневой элемент каталога и добавляем его в Document
         Element newCatalog = newDocument.addElement("yml_catalog");
-        newCatalog.addAttribute("date", new Date().toString());
+        newCatalog.addAttribute("date", "2023-02-07 12:58");
 
 // Создаем подэлементы каталога и добавляем их в новый каталог
         Element newShop = newCatalog.addElement("shop");

@@ -40,7 +40,7 @@ public class UpdateYmlFile {
                 //Добавляем тег param с атрибутом name="label"
                 NodeList paramNodes = offerElement.getElementsByTagName("param");
                 Element paramElement = doc.createElement("param");
-                paramElement.setAttribute("param", "name");
+                paramElement.setAttribute("name", "label");
                 paramElement.setTextContent("CustomLabel1");
                 offerElement.appendChild(paramElement); //Добавляем в конец списка <offer> этот элемент
 
